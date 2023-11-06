@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "type": "object",
+      "properties": {
+        "Account": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accountId": {
+                "type": "number"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "nickName": {
+                "type": "string"
+              },
+              "accountSchemeName": {
+                "type": "string"
+              },
+              "accountIdentification": {
+                "type": "string"
+              },
+              "accountName": {
+                "type": "string"
+              },
+              "servicerSchemeName": {
+                "type": "string"
+              },
+              "servicerIdentification": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "accountId",
+              "currency",
+              "nickName",
+              "accountSchemeName",
+              "accountIdentification",
+              "accountName",
+              "servicerSchemeName",
+              "servicerIdentification",
+              "createdAt",
+              "updatedAt"
+            ]
+          }
+        }
+      },
+      "required": [
+        "Account"
+      ]
+    }
+  },
+  "required": [
+    "Data"
+  ]
+}

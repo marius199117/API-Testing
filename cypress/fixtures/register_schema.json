@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "UserConfirmed": {
+            "type": "boolean"
+        },
+        "CodeDeliveryDetails": {
+            "type": "object",
+            "properties": {
+                "Destination": {
+                    "type": "string"
+                },
+                "DeliveryMedium": {
+                    "type": "string"
+                },
+                "AttributeName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Destination",
+                "DeliveryMedium",
+                "AttributeName"
+            ]
+        },
+        "UserSub": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "UserConfirmed",
+        "CodeDeliveryDetails",
+        "UserSub"
+    ]
+}

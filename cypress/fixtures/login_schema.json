@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "tokens": {
+            "type": "object",
+            "properties": {
+                "accessToken": {
+                    "type": "string"
+                },
+                "idToken": {
+                    "type": "string"
+                },
+                "productAccess": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "preferredName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "accessToken",
+                "idToken",
+                "productAccess",
+                "preferredName"
+            ]
+        },
+        "username": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "tokens",
+        "username"
+    ]
+}
